@@ -1,13 +1,13 @@
 {
-    "version": "2025.2.1-252.25557.134",
+    "version": "2025.2.2-252.26199.159",
     "description": "Cross-Platform IDE for Python by JetBrains.",
     "homepage": "https://www.jetbrains.com/rust/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/rustrover/RustRover-2025.2.1.exe#/dl.7z",
-    "hash": "cf56c10963791f76cd85406d7eaa5b8df1592cce0d23c1a73afa1b84d0e596f8",
+    "url": "https://download.jetbrains.com/rustrover/RustRover-2025.2.2.exe#/dl.7z",
+    "hash": "1a82959532b465782263e49bfea7cf58e0e98a9a083db195b7b573f95e7e341b",
     "extract_to": "IDE",
     "pre_install": [
         "Get-ChildItem \"$persist_dir\\IDE\\bin\\rustrover*.exe.vmoptions\" -ErrorAction SilentlyContinue | Copy-Item -Destination \"$dir\\IDE\\bin\"",
