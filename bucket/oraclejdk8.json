@@ -1,0 +1,33 @@
+{
+    "description": "Oracle Java Platform, Standard Edition Development Kit (JDK)",
+    "homepage": "https://www.oracle.com/java/",
+    "version": "8u461",
+    "license": "https://www.oracle.com/downloads/licenses/no-fee-license.html",
+    "architecture": {
+        "64bit": {
+            "url": "https://media.githubusercontent.com/media/resunne/resun-scoop-app-packages/refs/heads/main/jdk-8u461-windows-x64.zip",
+            "hash": "6115177921227ff2e0b0e8f5c98bcd5dad071c2b22e5d9f76c23617c49c562e7"
+        }
+    },
+    "extract_dir": "jdk-8u461",
+    "env_add_path": "bin",
+    "env_set": {
+        "JAVA_HOME": "$dir"
+    },
+    "checkver": {
+        "url": "https://www.oracle.com/java/technologies/downloads/",
+        "useragent": "curl/7",
+        "regex": "Java SE Development Kit ([\\d.u]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://media.githubusercontent.com/media/resunne/resun-scoop-app-packages/refs/heads/main/jdk-$version-windows-x64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://raw.githubusercontent.com/resunne/resun-scoop-app-packages/refs/heads/main/jdk-$version-windows-x64.zip.sha256"
+        },
+        "extract_dir": "jdk-$version"
+    }
+}
