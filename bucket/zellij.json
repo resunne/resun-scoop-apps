@@ -1,9 +1,9 @@
 {
-    "version": "0.43.0",
+    "version": "0.43",
     "description": "A terminal workspace with batteries included.",
     "homepage": "https://zellij.dev/",
     "license": "MIT License",
-    "url": "https://github.com/robbert1978/zellij-win/releases/download/0.43.0/zellij.exe#/zellij.exe",
+    "url": "https://github.com/robbert1978/zellij-win/releases/download/0.43/zellij.exe#/zellij.exe",
     "hash": "cd9369dc78146136b33542f875cf0d8647f1f5ea478af035bd278981f7ddd082",
     "bin": "zellij.exe",
     "shortcuts": [
