@@ -1,7 +1,7 @@
 {
     "description": "Oracle Java Platform, Standard Edition Development Kit (JDK)",
     "homepage": "https://www.oracle.com/java/",
-    "version": "8u471",
+    "version": "471",
     "license": "https://www.oracle.com/downloads/licenses/no-fee-license.html",
     "architecture": {
         "64bit": {
@@ -9,7 +9,7 @@
             "hash": "ed7fa08d13057c7245d8db558c1e54a266fdd0c3488654d69123c34f2aa81eb6"
         }
     },
-    "extract_dir": "jdk-8u471",
+    "extract_dir": "jdk1.8.0_471",
     "env_add_path": "bin",
     "env_set": {
         "JAVA_HOME": "$dir"
@@ -17,17 +17,17 @@
     "checkver": {
         "url": "https://www.oracle.com/java/technologies/downloads/",
         "useragent": "curl/7",
-        "regex": "Java SE Development Kit (8u[\\d.]+)"
+        "regex": "Java SE Development Kit 8u([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://media.githubusercontent.com/media/resunne/resun-scoop-app-packages/refs/heads/main/jdk-$version-windows-x64.zip"
+                "url": "https://media.githubusercontent.com/media/resunne/resun-scoop-app-packages/refs/heads/main/jdk-8u$version-windows-x64.zip"
             }
         },
         "hash": {
-            "url": "https://raw.githubusercontent.com/resunne/resun-scoop-app-packages/refs/heads/main/jdk-$version-windows-x64.zip.sha256"
+            "url": "https://raw.githubusercontent.com/resunne/resun-scoop-app-packages/refs/heads/main/jdk-8u$version-windows-x64.zip.sha256"
         },
-        "extract_dir": "jdk-$version"
+        "extract_dir": "jdk1.8.0_$version"
     }
 }
